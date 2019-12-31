@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+./autogen.sh && \
 ./configure \
     --prefix=${INSTALL_DIR} \
     --host=${TARGET} \

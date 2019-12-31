@@ -8,7 +8,7 @@
 EXTERNAL_LIBRARIES=()
 SOURCE_TYPE=TAR
 SOURCE_VALUE=4.2.1
-API_LEVEL=16
+API_LEVEL=21
 
 for artument in "$@"
 do
@@ -47,6 +47,10 @@ do
     ;;
     --enable-libmp3lame)
       EXTERNAL_LIBRARIES+=( "libmp3lame" )
+      shift
+    ;;
+    --enable-libopus)
+      EXTERNAL_LIBRARIES+=( "libopus" )
       shift
     ;;
     *)

@@ -9,7 +9,7 @@ echo "Using libopus $OPUS_VERSION"
 OPUS_SOURCES=opus-${OPUS_VERSION}
 
 if [[ ! -d "$OPUS_SOURCES" ]]; then
-  TARGET_FILE_NAME=lame-${OPUS_VERSION}.tar.gz
+  TARGET_FILE_NAME=opus-${OPUS_VERSION}.tar.gz
 
   curl https://archive.mozilla.org/pub/opus/${TARGET_FILE_NAME} --output ${TARGET_FILE_NAME}
   tar xf ${TARGET_FILE_NAME} -C .
